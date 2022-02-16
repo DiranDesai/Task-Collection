@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --header-light-color: #bcbcbf;
+}
+
+body{
+    font-family: Roboto;
+    line-height: 1.7;
+    background-color: #181820;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.rounded{
+    display: inline-block;
+    background: linear-gradient(180deg, #ea4c89, rgba(202, 3, 37, 0.562));
+    border-radius: 10px;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    cursor: pointer;
+}
+.rounded i{
+    font-size: 20px;
+    margin: 3px auto;
+    color: white;
+}
+
+.form-control{
+    padding: 13px 40px;
+    width: 100%;
+}
+.form-control:focus{
+    outline: none;
+}
+
+
+
+/* HEADER */
+
+header{
+    padding: 10px;
+    background-color: #21212b;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    border: 1px solid transparent;
+}
+
+header .flex{
+    justify-content: space-between;
+}
+
+header li a{
+    display: flex;
+    align-items: center;
+    color: var(--header-light-color);
+}
+header li{
+    margin-right: 25px;
+}
+header li a i{
+    margin-right: 7px;
+    color: var(--header-light-color);
+}
+
+
+header .avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+
+
+
+/*  SIDEBAR */
+
+.sidebar{
+    background-color: #21212b;
+    width: 0px;
+    height: 100Vh;
+    position: fixed;
+    top: 53px;
+    left: 0;
+    padding-top: 1rem;
+    overflow: hidden;
+    transition: width 0.2s ease-in-out;
+}
+.sidebar h3{
+    padding: 10px 20px;
+    color: #bcc1c4;
+}
+.sidebar.sidebar-active{
+    width: 250px;
+}
+
+.active{
+    background-color: #272732;
+}
+
+.sidebar li a{
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: #eaeaeb;
+    transition: background 0.3s ease-in-out;
+}
+
+.sidebar li a:hover{
+    background-color: #272732;
+}
+
+.sidebar span.rounded{
+    margin-right: 15px;
+}
+.sidebar span.rounded i{
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.school .rounded{
+    background: linear-gradient(180deg, #ea4c89, #ea4c89a1);
+}
+
+.personal .rounded{
+    background: linear-gradient(180deg, #4c9eea, #256eb39a);
+}
+
+.design .rounded{
+    background: linear-gradient(180deg, #4ceac8, #26c09fb9);
+}
+
+.games .rounded{
+    background: linear-gradient(180deg, #4c76ea, rgba(37, 110, 179, 0.87));
+}
+
+.music .rounded{
+    background: linear-gradient(180deg, #6e4cea, #2f1e6b);
+}
+
+
+
+/* MAIN */
+
+main{
+    margin-left: 0px;
+    color: var(--header-light-color);
+    transition: all 0.2s ease-in-out;
+    padding: 0 1rem;
+}
+
+main.main-active{
+    margin-left: 250px;
+}
+
+main .task-container{
+    max-width: 700px;
+    margin: 2rem auto;
+    position: relative;
+}
+
+.task-container .header{
+    justify-content: space-between;
+}
+.task-container .navigate-before{
+    background: none;
+    background-color: #21212b !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+.task-container .navigate-before i{
+    margin-top: 10px;
+}
+.task-container .more-vert{
+    cursor: pointer;
+    display: inline-block;
+    line-height: 3px;
+}
+
+.task-container .header div{
+    font-size: 20px;
+}
+
+.task-container .add-task{
+    position: relative;
+    height: 45px;
+    border: 2px solid #1e1e2b;
+    border-radius: 30px;
+    margin: 1rem 0;
+}
+
+.task-container .add-btn{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.task-container .add-task input{
+    height: 100%;
+    background: transparent;
+    border: none;
+    padding: 13px 3.2rem;
+    color: var(--header-light-color);
+}
+
+.task-container .tasks-title{
+    font-size: 16px;
+    margin: 1.5rem 0;
+}
+.task-container .task{
+    padding: 1rem;
+    background-color: #21212b;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.task-container .arrow-accordion{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.task-container .checkbox{
+    margin-right: 20px;
+    background: transparent;
+    border: 2px solid #ea4c89a1;
+}
+
+.task-container .task-content{
+    margin-top: 20px;
+}
+.task-container .task-content span{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.task-container .task-content span:last-child{
+    margin-left: 1rem;
+    color: rgb(255, 187, 0);
+}
+.task-container .task-content span i{
+    font-size: 14px;
+    margin-right: 5px;
+}

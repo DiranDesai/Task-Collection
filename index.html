@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Task Collection</title>
+</head>
+<body>
+    <header>
+        <div class="flex">
+            <ul class="header-left flex">
+                <li>
+                    <a href="#" id="menu-btn"><i class="material-icons">dehaze</i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="material-icons">dashboard</i>Dashboard</a>
+                </li>
+                <li>
+                    <a href="#"><i class="material-icons">collections</i>Collections</a>
+                </li>
+            </ul>
+            <ul class="header-right flex">
+                <li>
+                    <a href="#"><span class="rounded add"><i class="material-icons">add</i></span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="material-icons">search</i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="material-icons">notifications_none</i></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/team-4.jpg" alt="" class="avatar"></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <h3>Collections</h3>
+        <ul>
+            <li class="school">
+                <a href="#" class="active">
+                    <span class="rounded"><i class="material-icons">chrome_reader_mode</i></span>
+                    School
+                </a>
+            </li>
+            <li class="personal">
+                <a href="#">
+                    <span class="rounded"><i class="material-icons">person_outline</i></span>
+                    Personal
+                </a>
+            </li>
+            <li class="design">
+                <a href="#">
+                    <span class="rounded"><i class="material-icons">style</i></span>
+                    Design
+                </a>
+            </li>
+            <li class="games">
+                <a href="#">
+                    <span class="rounded"><i class="material-icons">games</i></span>
+                    Games
+                </a>
+            </li>
+            <li class="music">
+                <a href="#">
+                    <span class="rounded"><i class="material-icons">headset</i></span>
+                    Music
+                </a>
+            </li>
+        </ul>
+    </div>
+    <main id="main">
+        <section class="task-container">
+            <div class="header flex">
+                <div class="flex">
+                    <span class="rounded navigate-before">
+                        <i class="material-icons">navigate_before</i>
+                    </span>
+                    <div>School</div>
+                </div>
+                <span class="more-vert">
+                    <i class="material-icons">more_vert</i>
+                </span>
+            </div>
+            <div class="add-task">
+                <span class="rounded add-btn">
+                    <i class="material-icons">add</i>
+                </span>
+                <input type="text" class="form-control" placeholder="Add a task...">
+            </div>
+            <div class="tasks-title">Tasks - 8</div>
+            <div class="task flex">
+                <span class="checkbox rounded"></span>
+                <div class="task-content">
+                    Finish essay collaboration
+                    <div class="flex">
+                        <span><i class="material-icons">polymer</i> 0/1</span>
+                        <span><i class="material-icons">event</i> Today</span>
+                    </div>
+                </div>
+                <span class="arrow-accordion">
+                    <i class="material-icons">keyboard_arrow_down</i>
+                </span>
+            </div>
+            <div class="task flex">
+                <span class="checkbox rounded"></span>
+                <div class="task-content">
+                    Finish essay collaboration
+                    <div class="flex">
+                        <span><i class="material-icons">polymer</i> 0/1</span>
+                        <span><i class="material-icons">event</i> Today</span>
+                    </div>
+                </div>
+                <span class="arrow-accordion">
+                    <i class="material-icons">keyboard_arrow_down</i>
+                </span>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
